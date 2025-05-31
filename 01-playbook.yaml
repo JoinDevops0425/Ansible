@@ -2,5 +2,5 @@
   hosts: web
   tasks: #List of tasks
     - name : ping the server
-      ansible.bulitin.ping:
+      ansible.builtin.ping:
       
