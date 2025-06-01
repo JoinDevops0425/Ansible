@@ -8,7 +8,7 @@
 
   - name: print vairbale value by defining it using default
   vars:
-    PEROSN: "Leela"
-    ansible.builtin.debug:
-      msg: "Hello {{ PERSON | default ('Uday') }}"
+    PERSON: "Leela"
+  ansible.builtin.debug:
+    msg: "Hello {{ PERSON | default ('Uday') }}"
     
