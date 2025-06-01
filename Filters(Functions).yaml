@@ -1,0 +1,8 @@
+- name: Fucntions Demmo
+  hosts: local
+  connection: local
+  tasks:
+  - name: print vairbale value without defining it using default
+    ansible.builtin.debug:
+      msg: "Hello {{ PERSON | default ('Uday') }}"
+    
