@@ -11,5 +11,5 @@
   
   - name: print vairbale value by defining it using default
     ansible.builtin.debug:
-      msg: "Hello {{ PERSONS | default ('Uday') }}"
+      msg: "Hello {{ PERSONS | split (',') }}"
     
