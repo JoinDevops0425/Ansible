@@ -10,8 +10,6 @@
       prompt: PLease enter the greeting 
   tasks:
   - name: variables preference testing
-    vars: 
-      GREETING: "Hello from Task level"
     ansible.builtin.debug:
       msg: "This greeting is {{GREETING}}"
 
