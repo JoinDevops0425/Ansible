@@ -1,6 +1,8 @@
 - name: Fucntions Demmo
   hosts: local
   connection: local
+  vars:
+    PERSONS:"Ramesh, Suresh, Raheem, Joseph"
   tasks:
   - name: print vairbale value without defining it using default
     ansible.builtin.debug:
@@ -8,8 +10,6 @@
 
   
   - name: print vairbale value by defining it using default
-    vars:
-      PERSON: "Leela"
     ansible.builtin.debug:
-      msg: "Hello {{ PERSON | default ('Uday') }}"
+      msg: "Hello {{ PERSONS | default ('Uday') }}"
     
