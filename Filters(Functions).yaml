@@ -6,9 +6,10 @@
     ansible.builtin.debug:
       msg: "Hello {{ PERSON | default ('Uday') }}"
 
+  
   - name: print vairbale value by defining it using default
-  vars:
-    PERSON: "Leela"
-  ansible.builtin.debug:
+    vars:
+      PERSON: "Leela"
+    ansible.builtin.debug:
     msg: "Hello {{ PERSON | default ('Uday') }}"
     
