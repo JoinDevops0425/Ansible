@@ -12,4 +12,14 @@
   - name: print vairbale value by defining it using default
     ansible.builtin.debug:
       msg: "Hello {{ PERSONS | split (',') }}"
+  
+  - name: convert map to List
+    vars: 
+      COURSE:
+        name: ansible
+        duration: 10 hours
+        trainer: Shiva
+    ansible.builtin.debug:
+      msg: " Details are {{ COURSE | dict2items }}"
+
     
