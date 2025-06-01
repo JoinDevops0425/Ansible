@@ -1,0 +1,7 @@
+- name: variables from Invenotry
+  hosts: local
+  connection: local
+  tasks:
+  - name: priting variables from Inventory File
+    ansible.builtin.debug:
+      msg: "Hello the course details are {{COURSE}} with Duration {{DURATION}} and trainer is {{TRAINER}}"
