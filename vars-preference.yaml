@@ -7,7 +7,7 @@
   - course.yaml
   vars_prompt:
     - name : GREETING
-      promtp: PLease enter the greeting 
+      prompt: PLease enter the greeting 
   tasks:
   - name: variables preference testing
     vars: 
