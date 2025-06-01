@@ -1,7 +1,7 @@
 - name: conditions Demo
   hosts: local
   connection: local
-  vars_prommpt:
+  vars_prompt:
     - name: NUMBER
       prompt: Please Enter a number
       private: false
