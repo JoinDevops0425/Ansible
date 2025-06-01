@@ -5,9 +5,6 @@
     GREETING: "Hello from Play"
   vars_files:
   - course.yaml
-  vars_prompt:
-    - name : GREETING
-      prompt: PLease enter the greeting 
   tasks:
   - name: variables preference testing
     ansible.builtin.debug:
