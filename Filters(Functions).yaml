@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    PERSONS:"Ramesh, Suresh, Raheem, Joseph"
+    PERSONS: "Ramesh, Suresh, Raheem, Joseph"
   tasks:
   - name: print vairbale value without defining it using default
     ansible.builtin.debug:
