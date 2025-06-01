@@ -1,0 +1,18 @@
+- name: Play level Variables
+  hosts: local
+  connection: local
+  vars:
+    name: Uday
+    location: Bengaluru
+  
+  tasks:
+  - name: task1
+    ansible.builtin.debug:
+      msg: "Hello from {{ name }} and location is {{ location }}"
+
+  - name: task2
+    vars: 
+      name: Leela
+      location: Hyderabad
+    ansible.builtin.debug:
+      msg: "Hello from {{name}} and location {{location}}"
