@@ -12,6 +12,7 @@
     CONCEPTS: # Map or Dictionary or Object like {}
       CI: Jenkins
       SCRIPTING: "Shell, Ansible, Terraform, Python"
-  tasks: Print Course Information
+  tasks: 
+  - name: Print Course Information  
   ansible.builtin.debug:
     msg: "Course is {{COURSE}}, Duration is {{DURATION}}, is Live ? {{IS_LIVE}}, Tools are {{TOOLS}}, Concepts convered are {{CONEPTS}}"
