@@ -11,5 +11,5 @@
     vars:
       PERSON: "Leela"
     ansible.builtin.debug:
-    msg: "Hello {{ PERSON | default ('Uday') }}"
+      msg: "Hello {{ PERSON | default ('Uday') }}"
     
