@@ -5,4 +5,10 @@
   - name: print vairbale value without defining it using default
     ansible.builtin.debug:
       msg: "Hello {{ PERSON | default ('Uday') }}"
+
+  - name: print vairbale value by defining it using default
+  vars:
+    PEROSN: "Leela"
+    ansible.builtin.debug:
+      msg: "Hello {{ PERSON | default ('Uday') }}"
     
