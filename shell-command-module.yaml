@@ -1,0 +1,6 @@
+- name: Shell vs Command Module
+  hosts: frontend
+  tasks:
+  - name: redirect ls output to a File
+    ansible.builtin.command: "ls -ltr > /tmp/output.txt"
+
